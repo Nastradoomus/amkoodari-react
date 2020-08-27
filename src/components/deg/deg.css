@@ -1,0 +1,6 @@
+.MuiFormHelperText-root.Mui-error {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+  font-variant: small-caps;
+}

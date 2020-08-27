@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": false
+    }
+  },
+  "extensions": {
+    "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+  }
+}
