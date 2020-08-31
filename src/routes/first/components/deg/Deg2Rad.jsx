@@ -28,8 +28,8 @@ class Deg2Rad extends React.Component {
     ValidatorForm.removeValidationRule('isANumber');
   }
 
-  handleChange = (event) => {
-    const degrees = event.target.value;
+  handleChange = (e) => {
+    const degrees = e.target.value;
     this.setState({ degrees });
   };
 

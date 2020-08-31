@@ -47,7 +47,7 @@ class Rad2Deg extends React.Component {
     const { sync } = degrees;
     const { handleUpdate } = this.props;
     const { rads } = degrees;
-    degrees = Math.floor(degrees.rads * (180 / Math.PI) * 100) / 100;
+    degrees = Math.floor(degrees.rads * (180 / Math.PI) * 1000) / 1000;
     if (sync) {
       handleUpdate(degrees, rads, 'rad2Deg');
     }
