@@ -101,7 +101,20 @@ export default function Navbar() {
                 <ListItemIcon>
                   <FunctionsIcon fontSize="small" />
                 </ListItemIcon>
-                <ListItemText primary="Degrees to Radians excercise" />
+                <ListItemText primary="State" />
+              </MenuItem>
+            </Link>
+            <Link
+              className={classes.link}
+              component={RouterLink}
+              to="/second"
+              onClick={handleClose}
+            >
+              <MenuItem>
+                <ListItemIcon>
+                  <FunctionsIcon fontSize="small" />
+                </ListItemIcon>
+                <ListItemText primary="Context" />
               </MenuItem>
             </Link>
           </Menu>
@@ -114,7 +127,10 @@ export default function Navbar() {
               <Button color="inherit">Home</Button>
             </Link>
             <Link component={RouterLink} to="/first">
-              <Button color="inherit">Degrees to Radians excercise</Button>
+              <Button color="inherit">State</Button>
+            </Link>
+            <Link component={RouterLink} to="/second">
+              <Button color="inherit">Context</Button>
             </Link>
           </Toolbar>
         </AppBar>
