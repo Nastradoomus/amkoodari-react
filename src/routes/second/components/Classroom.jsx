@@ -9,21 +9,9 @@ class Classroom extends React.Component {
   componentDidMount() {}
 
   render() {
-    const tac = {
-      textAlign: 'center',
-    };
     const { context2 } = this.context;
     return (
       <div>
-        <header style={tac}>
-          <Typography variant="h1" gutterBottom>
-            Hello I&apos;m the Classroom component.
-          </Typography>
-          <Typography variant="h4" gutterBottom>
-            My parent component (the teacher -component) delivers two context
-            messages using a state object.
-          </Typography>
-        </header>
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>

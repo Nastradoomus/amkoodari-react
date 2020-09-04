@@ -117,6 +117,19 @@ export default function Navbar() {
                 <ListItemText primary="Context" />
               </MenuItem>
             </Link>
+            <Link
+              className={classes.link}
+              component={RouterLink}
+              to="/third"
+              onClick={handleClose}
+            >
+              <MenuItem>
+                <ListItemIcon>
+                  <FunctionsIcon fontSize="small" />
+                </ListItemIcon>
+                <ListItemText primary="Events" />
+              </MenuItem>
+            </Link>
           </Menu>
         </AppBar>
       </Box>
@@ -131,6 +144,9 @@ export default function Navbar() {
             </Link>
             <Link component={RouterLink} to="/second">
               <Button color="inherit">Context</Button>
+            </Link>
+            <Link component={RouterLink} to="/third">
+              <Button color="inherit">Third</Button>
             </Link>
           </Toolbar>
         </AppBar>
