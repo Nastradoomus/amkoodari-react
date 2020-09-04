@@ -15,7 +15,7 @@ class Second extends React.Component {
   }
 
   componentDidMount() {
-    console.info('✔ Second chapter mounted! 🐱‍💻🐱‍');
+    console.info('✔ Second chapter mounted! 2️⃣‍');
   }
 
   componentWillUnmount() {}
@@ -29,7 +29,7 @@ class Second extends React.Component {
     return (
       <div className="Second">
         <header style={tac}>
-          <Typography variant="h1" gutterBottom>
+          <Typography variant="h2" gutterBottom>
             Hello I&apos;m the Classroom component.
           </Typography>
           <Typography variant="h4" gutterBottom>

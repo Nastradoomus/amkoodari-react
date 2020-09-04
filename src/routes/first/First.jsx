@@ -1,7 +1,5 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
+import { Container, Grid, Typography } from '@material-ui/core';
 import Deg2Rad from './components/deg/Deg2Rad';
 import Rad2Deg from './components/deg/Rad2Deg';
 import Sync from './components/deg/Sync';
@@ -20,7 +18,7 @@ class First extends React.Component {
   }
 
   componentDidMount() {
-    console.info('✔ First chapter mounted! 🐱‍👤');
+    console.info('✔ First chapter mounted! 1️⃣');
   }
 
   componentWillUnmount() {}

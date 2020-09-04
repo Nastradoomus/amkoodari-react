@@ -23,7 +23,6 @@ const NameButton = (props) => {
   const handleNameInput = (e) => {
     setName(e.target.value);
   };
-
   return (
     <div>
       <Box pb={2}>

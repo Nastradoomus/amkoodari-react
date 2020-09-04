@@ -1,10 +1,5 @@
 import React from 'react';
-
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import { Grid, Container, Paper, Typography, Box } from '@material-ui/core';
 import NameButton from './components/NameButton';
 
 export default class Third extends React.Component {
@@ -16,19 +11,17 @@ export default class Third extends React.Component {
   }
 
   componentDidMount() {
-    console.info('✔ Third chapter mounted! 🐢');
+    console.info('✔ Third chapter mounted! 3️⃣');
   }
 
   callback = (data) => {
     this.setState({ name: data });
   };
-  /*
-   useEffect(() => {
-     console.info('✔ Third chapter mounted! 🐢');
-   }, []);
-*/
 
   render() {
+    console.log(
+      '👬 In React.strictmode render (& constructor) fires twice! ✌',
+    );
     const tac = {
       textAlign: 'center',
     };
@@ -36,16 +29,14 @@ export default class Third extends React.Component {
     return (
       <div className="third">
         <header style={tac}>
-          <Typography variant="h1" gutterBottom>
+          <Typography variant="h2" gutterBottom>
             Event & Button example.
           </Typography>
         </header>
         <Container style={tac}>
           <Grid item xs={12}>
             <Paper>
-              <React.StrictMode>
-                <NameButton name={name} parentCallback={this.callback} />
-              </React.StrictMode>
+              <NameButton name={name} parentCallback={this.callback} />
               <Box pb={3}>
                 <Typography variant="h4">
                   This is from the parent component as a returned callback:{' '}

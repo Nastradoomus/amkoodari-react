@@ -1,19 +1,24 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import Link from '@material-ui/core/Link';
-import { makeStyles } from '@material-ui/core/styles';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import {
+  Menu,
+  MenuItem,
+  ListItemIcon,
+  ListItemText,
+  makeStyles,
+  IconButton,
+  Link,
+  Box,
+  AppBar,
+  Toolbar,
+  Button,
+} from '@material-ui/core';
 import FunctionsIcon from '@material-ui/icons/FunctionsOutlined';
 import HomeIcon from '@material-ui/icons/HomeOutlined';
-import IconButton from '@material-ui/core/IconButton';
+import SchoolIcon from '@material-ui/icons/SchoolOutlined';
+import EmojiEvents from '@material-ui/icons/EmojiEventsOutlined';
+import ViewArray from '@material-ui/icons/ViewArrayOutlined';
 import MenuIcon from '@material-ui/icons/Menu';
-import Box from '@material-ui/core/Box';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -112,7 +117,7 @@ export default function Navbar() {
             >
               <MenuItem>
                 <ListItemIcon>
-                  <FunctionsIcon fontSize="small" />
+                  <SchoolIcon fontSize="small" />
                 </ListItemIcon>
                 <ListItemText primary="Context" />
               </MenuItem>
@@ -125,9 +130,35 @@ export default function Navbar() {
             >
               <MenuItem>
                 <ListItemIcon>
-                  <FunctionsIcon fontSize="small" />
+                  <EmojiEvents fontSize="small" />
                 </ListItemIcon>
                 <ListItemText primary="Events" />
+              </MenuItem>
+            </Link>
+            <Link
+              className={classes.link}
+              component={RouterLink}
+              to="/fourth"
+              onClick={handleClose}
+            >
+              <MenuItem>
+                <ListItemIcon>
+                  <ViewArray fontSize="small" />
+                </ListItemIcon>
+                <ListItemText primary="Map Arrays" />
+              </MenuItem>
+            </Link>
+            <Link
+              className={classes.link}
+              component={RouterLink}
+              to="/fifth"
+              onClick={handleClose}
+            >
+              <MenuItem>
+                <ListItemIcon>
+                  <ViewArray fontSize="small" />
+                </ListItemIcon>
+                <ListItemText primary="Modify Arrays" />
               </MenuItem>
             </Link>
           </Menu>
@@ -137,16 +168,22 @@ export default function Navbar() {
         <AppBar position="static" className={classes.appBar}>
           <Toolbar>
             <Link component={RouterLink} to="/">
-              <Button color="inherit">Home</Button>
+              <Button>Home</Button>
             </Link>
             <Link component={RouterLink} to="/first">
-              <Button color="inherit">State</Button>
+              <Button>State</Button>
             </Link>
             <Link component={RouterLink} to="/second">
-              <Button color="inherit">Context</Button>
+              <Button>Context</Button>
             </Link>
             <Link component={RouterLink} to="/third">
-              <Button color="inherit">Third</Button>
+              <Button>Third</Button>
+            </Link>
+            <Link component={RouterLink} to="/fourth">
+              <Button>Fourth</Button>
+            </Link>
+            <Link component={RouterLink} to="/fifth">
+              <Button>Fifth</Button>
             </Link>
           </Toolbar>
         </AppBar>
