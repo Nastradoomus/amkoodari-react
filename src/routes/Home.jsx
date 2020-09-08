@@ -1,12 +1,5 @@
 import React from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
-import WebFont from 'webfontloader';
-
-WebFont.load({
-  google: {
-    families: ['Roboto:300,400,700', 'sans-serif'],
-  },
-});
 
 class Home extends React.Component {
   componentDidMount() {

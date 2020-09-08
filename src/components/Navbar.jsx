@@ -18,6 +18,9 @@ import HomeIcon from '@material-ui/icons/HomeOutlined';
 import SchoolIcon from '@material-ui/icons/SchoolOutlined';
 import EmojiEvents from '@material-ui/icons/EmojiEventsOutlined';
 import ViewArray from '@material-ui/icons/ViewArrayOutlined';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import RouterIcon from '@material-ui/icons/Router';
+import DoneOutlineOutlinedIcon from '@material-ui/icons/DoneOutlineOutlined';
 import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
@@ -161,6 +164,45 @@ export default function Navbar() {
                 <ListItemText primary="Modify Arrays" />
               </MenuItem>
             </Link>
+            <Link
+              className={classes.link}
+              component={RouterLink}
+              to="/sixth"
+              onClick={handleClose}
+            >
+              <MenuItem>
+                <ListItemIcon>
+                  <ArrowForwardIosIcon fontSize="small" />
+                </ListItemIcon>
+                <ListItemText primary="Ref in a function" />
+              </MenuItem>
+            </Link>
+            <Link
+              className={classes.link}
+              component={RouterLink}
+              to="/seventh"
+              onClick={handleClose}
+            >
+              <MenuItem>
+                <ListItemIcon>
+                  <RouterIcon fontSize="small" />
+                </ListItemIcon>
+                <ListItemText primary="Router (external URL)" />
+              </MenuItem>
+            </Link>
+            <Link
+              className={classes.link}
+              component={RouterLink}
+              to="/eighth"
+              onClick={handleClose}
+            >
+              <MenuItem>
+                <ListItemIcon>
+                  <DoneOutlineOutlinedIcon fontSize="small" />
+                </ListItemIcon>
+                <ListItemText primary="Final chapter" />
+              </MenuItem>
+            </Link>
           </Menu>
         </AppBar>
       </Box>
@@ -184,6 +226,15 @@ export default function Navbar() {
             </Link>
             <Link component={RouterLink} to="/fifth">
               <Button>Fifth</Button>
+            </Link>
+            <Link component={RouterLink} to="/sixth">
+              <Button>Sixth</Button>
+            </Link>
+            <Link component={RouterLink} to="/seventh">
+              <Button>Seventh</Button>
+            </Link>
+            <Link component={RouterLink} to="/eighth">
+              <Button>Eighth (Final)</Button>
             </Link>
           </Toolbar>
         </AppBar>

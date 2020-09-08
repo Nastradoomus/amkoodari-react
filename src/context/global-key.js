@@ -5,9 +5,8 @@ const KEY = React.createContext({
   key: 0,
   setKey: (value) => {
     KEY.key = value;
-    if (KEY.key === 1) {
+    if (KEY.key !== 0) {
       ColoredLog('🎈 KEY is global through context.', 'purple');
-      ColoredLog('🎈 Use function setKey(value)', 'forestgreen');
     }
   },
 });

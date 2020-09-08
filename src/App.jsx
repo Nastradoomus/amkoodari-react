@@ -3,7 +3,6 @@ import Box from '@material-ui/core/Box';
 import WebFont from 'webfontloader';
 import Routes from './Routes';
 import Navbar from './components/Navbar';
-// import Id from './context/global-id';
 
 WebFont.load({
   google: {

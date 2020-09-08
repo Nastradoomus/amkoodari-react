@@ -125,7 +125,7 @@ const Fifth = () => {
   };
 
   return (
-    <div className="third">
+    <div className="fifth">
       <header style={tac}>
         <Typography gutterBottom variant="h2">
           Modifying arrays.
