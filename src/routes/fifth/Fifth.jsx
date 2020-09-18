@@ -86,9 +86,7 @@ const Fifth = () => {
               <TextField
                 id={food.title}
                 defaultValue={food.title}
-                onChange={(e) =>
-                  handleChange(parseInt(e.target.value, 10), index, 'title')
-                }
+                onChange={(e) => handleChange(e.target.value, index, 'title')}
                 inputProps={{
                   style: {
                     width: '100%',
