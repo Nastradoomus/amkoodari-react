@@ -1,4 +1,4 @@
-# amkoodari-react
+# ⚛️ AMKoodari React
 
 AMKoodari React course
 
@@ -10,3 +10,5 @@ AMKoodari React course
 6. Ref with functions
 7. Router
 8. Final project
+
+[Certificate](https://techclass.io/certificate/N0E67BW4)
